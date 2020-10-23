@@ -10,6 +10,7 @@ import Home from './components/home.component';
 import Resume from './components/resume.component';
 import Projects from './components/projects.component';
 import NavbarPage from './components/navbarpage.component';
+import FooterPage from './components/footerpage.component';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/contact" component={Contact} />
         <Route path="/projects" component={Projects} />
         <Route path="/resume" component={Resume} />
+        <FooterPage />
       </Router>
 
     </div>
