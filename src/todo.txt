@@ -1,0 +1,3 @@
+Try to get animation when window scrolls to div, check out:
+
+https://stackoverflow.com/questions/45585542/detecting-when-user-scrolls-to-bottom-of-div-with-react-js

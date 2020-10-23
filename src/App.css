@@ -1,38 +1,371 @@
 .App {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: astera;
+  src: url("./assets/ASTERA.ttf");
+}
+
+.astera {
+  font-family: astera;
+}
+
+.bg-insta {
+  background: #833ab4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fcb045,
+    #fd1d1d,
+    #833ab4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fcb045,
+    #fd1d1d,
+    #833ab4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbg-black {
+  background: black !important;
+  transition: 0.75s ease;
+}
+
+.bg-black {
+  background: black !important;
+}
+
+.bg-white {
+  background: white !important;
+}
+
+.font-white {
+  color: white !important;
+}
+
+.font-white:hover {
+  background: gray !important;
+}
+
+.navbar-tr {
+  background: transparent !important;
+  transition: 0.75s ease;
+}
+.navbar-tr.scrolled {
+  background: transparent !important;
+}
+
+.landing-grid {
+  text-align: center;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.landing-grid2 {
+  text-align: center;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+}
+
+.landing-column {
+  -webkit-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in;
+  -o-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in;
+  height: 100%;
+}
+
+.dynamic-bg {
+  left: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in;
+  -o-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in;
+  background-position: center;
+}
+
+.avatar-img {
+  height: 250px;
+  padding-top: 5em;
+}
+
+.banner-top,
+.banner-bot {
+  animation: animatedgradient 3s ease alternate infinite;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.banner-top {
+  border-top: 5px solid gray;
+  border-bottom: 5px solid gray;
+}
+
+.banner-bot {
+  border-bottom: 5px solid gray;
+}
+
+.banner-end {
+  justify-content: center;
+  text-align: center;
+  min-height: 30vh;
+}
+
+.banner-bot h4 {
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: lighter;
+  font-size: calc(8px + 0.8vw);
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.service-col {
+  border-bottom: 5px solid gray;
+  border-left: 3px solid gray;
+  border-right: 3px solid gray;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  min-height: 30vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.service {
+  display: block;
+  text-align: center;
+  -webkit-transition: opacity 0.5s ease-in-out, transform 0.25s ease-in;
+  -moz-transition: opacity 0.5s ease-in-out, transform 0.25s ease-in;
+  -o-transition: opacity 0.5s ease-in-out, transform 0.25s ease-in;
+  transition: opacity 0.5s ease-in-out, transform 0.25s ease-in;
+}
+
+.banner-top h2,
+.service-col h3 {
+  font-weight: bold;
+  color: white;
+  font-family: astera;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.service-col h4 {
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: lighter;
+  font-size: calc(12px + 1.5vw);
+}
+
+.banner-top h2 {
+  font-size: calc(10px + 1.5vw);
+}
+
+.service-col h3 {
+  font-size: calc(12px + 1.5vw);
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.service-icon {
+  width: calc(70px + 4vw);
+  height: calc(70px + 4vw);
+  border: 5px solid white;
+  border-radius: 50%;
+  display: table;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.service-icon i {
+  padding: 5%;
+  color: white;
+  font-size: calc(20px + 4vw);
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.banner-text {
+  background-color: rgba(0, 0, 0, 0.8);
+  max-height: 100%;
+  -webkit-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in;
+  -o-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in;
+}
+
+.banner-text-w,
+.banner-text-end {
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in;
+  -o-transition: opacity 0.5s ease-in-out, transform 0.5s ease-in;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in;
+  max-height: 100%;
+}
+
+.banner-text,
+.banner-text-w,
+.banner-text-end {
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.banner-text h1,
+.banner-text-w h1 {
+  font-size: calc(20px + 1.5vw);
+  font-weight: bold;
+  font-family: astera;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.banner-text h2,
+.banner-text-w h2,
+.banner-text-end h2 {
+  font-size: calc(10px + 1.5vw);
+  font-weight: bold;
+  color: white;
+  font-family: astera;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.banner-text-end h2 {
+  margin: auto;
+}
+
+.banner-text hr,
+.banner-text-w hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+
+.banner-text p,
+.banner-text-w p {
+  color: white;
+  font-size: calc(6px + 1vw);
+
+  padding: 1em;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links i {
+  color: white;
+  font-size: calc(20px + 4vw);
+  padding: 8px;
+}
+
+.projects-grid {
+  display: flex;
+}
+
+/* Resume Page css */
+.resume-right-col {
+  background: #27221f;
+  color: white;
+  padding: 2em;
+}
+
+/* contact page css */
+
+.contact-body {
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 550px;
+  background: white;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.contact-grid h2 {
+  font-family: "Anton", sans-serif;
+}
+
+.contact-grid p {
+  font-family: "Oxygen", sans-serif;
+  font-weight: bold;
+}
+
+.contact-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-list i {
+  font-size: 66px;
+  padding-right: 5rem;
+}
+
+/* contact page css */
+
+@media screen and (max-width: 750px) {
+  .landing-grid,
+  .landing-grid2,
+  .landing-grid3 {
+    height: 65vh;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-height: 480px) {
+  .landing-grid,
+  .landing-grid2,
+  .landing-grid3 {
+    height: 480px;
+  }
+
+  .banner-text h1,
+  .banner-text-w h1 {
+    font-size: calc(20px + 1.5vw) !important;
+  }
+
+  .dynamic-bg {
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
