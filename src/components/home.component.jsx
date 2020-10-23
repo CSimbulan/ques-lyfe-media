@@ -277,11 +277,7 @@ class Home extends Component {
                         </div>
                         </MDBCol>
                     </MDBRow>
-                    <div className="footer-copyright text-center py-3 font-white">
-                        <MDBContainer fluid>
-                            &copy; {new Date().getFullYear()} Copyright: Ques Lyfe Media
-                        </MDBContainer>
-                    </div>  
+
             </div>
         )
     }
