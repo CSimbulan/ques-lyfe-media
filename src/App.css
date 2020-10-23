@@ -271,7 +271,7 @@
 .banner-text p,
 .banner-text-w p {
   color: white;
-  font-size: calc(6px + 1vw);
+  font-size: calc(8px + 1vw);
 
   padding: 1em;
 }
