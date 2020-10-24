@@ -269,7 +269,7 @@ class About extends Component {
         <MDBRow>
           <MDBCol sm="12" md="12" lg="12" xl="12">
             <div className="banner-top">
-              <h2>Check Out These Links For More</h2>
+              <h2>Check Out My Links For More</h2>
             </div>
           </MDBCol>
         </MDBRow>

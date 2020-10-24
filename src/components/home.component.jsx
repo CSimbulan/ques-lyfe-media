@@ -42,7 +42,7 @@ class Home extends Component {
                         <MDBCol className="landing-grid bg-white" sm="12" md="12" lg="6" xl="7">
                             <div className="banner-text" style={{transform:"translate(-50%,-50%)"}}>
                                 <br></br>
-                                <h2>Welcome To:</h2>
+                                <h2>Welcome To</h2>
                                 <h1>Ques Lyfe Media</h1>
                                 <hr />
                                 <p>Videographer &#8226; Video Editor &#8226; Model &#8226; Blogger &#8226; Content Creator</p>
