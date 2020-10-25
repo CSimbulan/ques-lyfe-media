@@ -67,20 +67,16 @@ class About extends Component {
               <h1>About Me</h1>
               <hr />
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum euismod id erat sit amet mollis.
+                Praesent egestas ex ac neque posuere, et malesuada eros semper. In eu sem faucibus, dictum arcu quis, lobortis nunc.
                 <br />
                 <br />
-                Orci varius natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus. Nulla facilisi.
+                Integer non metus pretium, dictum nibh ut, consequat mauris. Ut nisl tortor, facilisis at fringilla id, efficitur non libero. Quisque et eleifend turpis.
                 <br />
                 <br />
-                Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                Curabitur quis aliquam neque.
+                Fusce in lorem neque. Pellentesque vel euismod massa, sit amet venenatis lorem.
                 <br />
                 <br />
-                Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                Curabitur quis aliquam neque.
+                Pellentesque efficitur lorem eu diam pretium laoreet. In hac habitasse platea dictumst. Mauris tincidunt bibendum purus vel tincidunt. Nullam vel egestas diam.
               </p>
             </div>
           </MDBCol>
@@ -88,7 +84,7 @@ class About extends Component {
             <div
               className="dynamic-bg"
               style={{
-                backgroundImage: "url(../assets/with_gear.jpg)",
+                backgroundImage: "url(../assets/yellow2.jpg)",
                 backgroundSize: "cover",
               }}
             ></div>
