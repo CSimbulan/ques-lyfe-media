@@ -15,43 +15,43 @@ class About extends Component {
   getFadeLeftBG = (inView) => {
     return inView
       ? {
-          opacity: 1,
-          transform: "translate(0%,0%)",
-          WebkitTransform: "translate(0%,0%)",
-        }
+        opacity: 1,
+        transform: "translate(0%,0%)",
+        WebkitTransform: "translate(0%,0%)",
+      }
       : {
-          opacity: 0,
-          transform: "translate(50%,0%)",
-          WebkitTransform: "translate(-50%,0%)",
-        };
+        opacity: 0,
+        transform: "translate(50%,0%)",
+        WebkitTransform: "translate(-50%,0%)",
+      };
   };
 
   getFadeRightBG = (inView) => {
     return inView
       ? {
-          opacity: 1,
-          transform: "translate(0%,0%)",
-          WebkitTransform: "translate(0%,0%)",
-        }
+        opacity: 1,
+        transform: "translate(0%,0%)",
+        WebkitTransform: "translate(0%,0%)",
+      }
       : {
-          opacity: 0,
-          transform: "translate(50%,0%)",
-          WebkitTransform: "translate(50%,0%)",
-        };
+        opacity: 0,
+        transform: "translate(50%,0%)",
+        WebkitTransform: "translate(50%,0%)",
+      };
   };
 
   getFadeDown = (inView) => {
     return inView
       ? {
-          opacity: 1,
-          transform: "translate(0%,0%)",
-          WebkitTransform: "translate(0%,0%)",
-        }
+        opacity: 1,
+        transform: "translate(0%,0%)",
+        WebkitTransform: "translate(0%,0%)",
+      }
       : {
-          opacity: 0,
-          transform: "translate(0%,0%)",
-          WebkitTransform: "translate(0%,0%)",
-        };
+        opacity: 0,
+        transform: "translate(0%,0%)",
+        WebkitTransform: "translate(0%,0%)",
+      };
   };
 
   render() {
