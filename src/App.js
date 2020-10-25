@@ -11,14 +11,15 @@ import Resume from './components/resume.component';
 import Projects from './components/projects.component';
 import NavbarPage from './components/navbarpage.component';
 import FooterPage from './components/footerpage.component';
+import ScrollToTop from './components/topscroll.component';
 
 function App() {
-
 
   return (
     <div className="App">
       <Router>
         <NavbarPage />
+        <ScrollToTop />
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
