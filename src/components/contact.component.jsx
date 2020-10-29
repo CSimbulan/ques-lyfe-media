@@ -27,7 +27,38 @@ class Contact extends Component {
     return (
       <div>
         <MDBRow>
-          <MDBCol className="landing-grid" sm="12" md="12" lg="6" xl="6">
+          <MDBCol
+            className="landing-grid"
+            sm="12"
+            md="12"
+            lg="6"
+            xl="6"
+            style={{ paddingRight: 0 }}
+          >
+            <div className="landing-column">
+              <div className="banner-text-w">
+                <br></br>
+                <h1>Contact Form</h1>
+                <hr />
+                <p>
+                  I'm so glad you're here!
+                  <br /><br />
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vestibulum euismod id erat sit amet mollis.
+                  <br></br>
+                  <br></br>
+                  Orci varius natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus. Nulla facilisi.
+                  <br></br>
+                  <br></br>
+                  Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                  Curabitur quis aliquam neque.
+                </p>
+                <br></br>
+              </div>
+            </div>
+          </MDBCol>
+          <MDBCol className="landing-grid" sm="12" md="12" lg="6" xl="6" style={{ paddingLeft: 0 }}>
             <div className="banner-text-w">
               <form
                 className="needs-validation contact-form"
@@ -138,37 +169,6 @@ class Contact extends Component {
                   Submit
                 </MDBBtn>
               </form>
-            </div>
-          </MDBCol>
-          <MDBCol
-            className="landing-grid"
-            sm="12"
-            md="12"
-            lg="6"
-            xl="6"
-            style={{ paddingLeft: 0 }}
-          >
-            <div className="landing-column">
-              <div className="banner-text-w">
-                <br></br>
-                <h1>Contact Form</h1>
-                <hr />
-                <p>
-                  I'm so glad you're here!
-                  <br /><br />
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vestibulum euismod id erat sit amet mollis.
-                  <br></br>
-                  <br></br>
-                  Orci varius natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mus. Nulla facilisi.
-                  <br></br>
-                  <br></br>
-                  Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                  Curabitur quis aliquam neque.
-                </p>
-                <br></br>
-              </div>
             </div>
           </MDBCol>
         </MDBRow>
